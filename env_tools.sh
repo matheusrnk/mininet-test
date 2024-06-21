@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Atualiza a lista de pacotes e os pacotes instalados
-sudo apt update
-sudo apt upgrade -y
-
 # Instala iperf3
 sudo apt install -y iperf3
 
@@ -30,6 +26,8 @@ sudo apt install -y python3-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev z
 
 # Instala ryu-manager usando pip
 pip3 install ryu
+
+mv mininet-test mininet/
 
 # Confirmação de instalação
 echo "Todas as ferramentas foram instaladas com sucesso!"
